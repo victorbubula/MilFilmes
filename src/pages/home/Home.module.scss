@@ -1,0 +1,43 @@
+@import "styles/variables";
+
+.background {
+    background-color: $background;
+    font-family: $fonte;
+    height: 100vh;
+    .container_sortear {
+        align-items: center;
+        margin: auto;
+        max-width: 900px;
+        text-align: center;
+        h1 {
+            color: $branco;
+            font-size: 3em;
+            margin: 1em 0;
+        }
+        Button {
+            border-radius: 0px;
+            font-size: 1.5em;
+            padding: 18px;
+            width: 25%;
+        }
+    }
+    main {
+        background-color: $fundoprincipal;
+        border-top-left-radius: $border;
+        border-top-right-radius: $border;
+        min-height: 500px;
+        margin-top: 3.5em ;
+        padding: 0.5em;
+        .films {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .gender {
+            text-align: left;
+            color: $branco;
+            font-size: 1.5em;
+            margin: 1em;
+        }
+    }
+}

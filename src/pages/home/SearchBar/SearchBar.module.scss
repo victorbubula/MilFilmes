@@ -1,0 +1,25 @@
+@import 'styles/variables';
+
+.search {
+    background-color: $fundoprincipal;
+    border: none;
+    border-radius: 30px;
+    color: $branco;
+    padding: 1em 2em;
+    width: 50%;
+}
+
+.search::placeholder {
+    background-image: url(lupa.svg);
+    background-position: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: gray;
+    text-align: center;
+}
+
+.search:focus, .search:hover{
+    outline-color: $roxoprincipal;
+    outline-style: solid;
+    outline-width: 2px;
+}

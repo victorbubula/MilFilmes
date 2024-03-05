@@ -1,0 +1,20 @@
+@import 'styles/variables';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $background;
+    color: gray;
+    gap: 1em;
+    padding: 1em;
+    font-size: 12px;
+    svg {
+        width: 45px;
+    }
+    .link {
+        text-decoration: none;
+        color: $roxoprincipal;
+    }
+}

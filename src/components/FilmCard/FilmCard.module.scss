@@ -1,0 +1,31 @@
+@import "styles/variables";
+
+.card {
+    align-items: center;
+    width: fit-content;
+    margin-right: 2em;
+    position: relative;
+    .poster{
+        transition: all 0.1s linear;
+        width: 230px;
+        height: 340px;
+    }
+    .info {
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: $branco;
+        .name {
+            font-size: 2em;
+        }
+    }
+}
+
+.card:hover{
+    .poster,.info{
+        display: block;
+        transition: 100ms linear;
+        scale: 1.1;
+    }
+}

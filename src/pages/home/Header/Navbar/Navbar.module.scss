@@ -1,0 +1,12 @@
+@import 'styles/variables';
+
+.navbar {
+    a{
+        color: $branco;
+        padding: .8em;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $roxobrilhante;
+    }
+}

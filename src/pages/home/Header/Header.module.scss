@@ -1,0 +1,12 @@
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    div {
+        align-items: center;
+        display: flex;
+        gap:2em;
+    }
+}

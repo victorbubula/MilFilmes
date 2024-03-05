@@ -1,0 +1,11 @@
+@import "styles/variables";
+
+.background {
+    background-color: $background;
+    font-family: $fonte;
+    height: 100vh;
+    .header {
+        text-align: center;
+        padding: 2em;
+    }
+}

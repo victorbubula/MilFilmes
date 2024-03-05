@@ -1,0 +1,15 @@
+[
+    {
+        "title": "deadpool",
+        "photo": "/assets/posters/deadpool.png",
+        "gender": ["Comédia", "Ação"],
+        "id":1
+    },
+
+    {
+        "title": "interestelar",
+        "photo": "/assets/posters/interestelar.jpg",
+        "gender": ["sci-fi"],
+        "id":2
+    }
+]
