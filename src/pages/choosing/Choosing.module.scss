@@ -1,19 +1,2 @@
 @import "styles/variables";
-
-.background {
-    background-color: $background;
-    font-family: $fonte;
-    height: 100vh;
-    .header {
-        text-align: center;
-        padding: 2em;
-        .title{
-            color: $branco;
-            font-size: 1.6em;
-            margin: 2em;
-        }
-    }
-    .main {
-        background-color: $fundoprincipal;
-    }
-}
+@import "styles/defaultStyles";

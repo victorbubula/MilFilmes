@@ -1,0 +1,19 @@
+.background {
+    background-color: $background;
+    font-family: $fonte;
+    min-height: 95vh;
+    .title{
+        color: $branco;
+        font-size: 1.6em;
+        margin: 2em;
+        text-align: center;
+    }
+    main {
+        background-color: $fundoprincipal;
+        border-top-left-radius: $border;
+        border-top-right-radius: $border;
+        max-width: 80vw;
+        margin: auto;
+        margin-top: 3.5em ;
+    }
+}

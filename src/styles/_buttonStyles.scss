@@ -1,0 +1,19 @@
+.button {
+    background-color: $roxoprincipal;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    font-family: $fonte;
+    font-size: 1em;
+    line-height: .8em;
+    height: fit-content;
+    padding: 1em;
+    text-decoration: none;
+    transition: 0.8s;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 18px 8px $roxobrilhante;
+    transition: 100ms;
+}
