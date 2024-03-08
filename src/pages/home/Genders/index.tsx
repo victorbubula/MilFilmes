@@ -3,22 +3,22 @@ import styles from './Genders.module.scss';
 
 interface Props {
 	film: {
-		title: string; 
-		photo: string; 
-		gender: string[]; 
-		id: number; 
+		title: string;
+		photo: string;
+		gender: string[];
+		id: number;
 	}[],
 	name: string
 }
 
-export default function Gender({ film, name }:Props) {
+export default function Gender({ film, name }: Props) {
 
 	return (
 		(film.length > 0) ? <section className={styles.films}>
 			<h1 className={styles.gender}>{name}</h1>
 			<div className={styles.container}>
 				{film.map(item => (
-					<FilmCard 
+					<FilmCard
 						title={item.title}
 						photo={item.photo}
 						genders={item.gender}
@@ -27,6 +27,6 @@ export default function Gender({ film, name }:Props) {
 				))}
 			</div>
 		</section>
-			:null
+			: null
 	);
 }
