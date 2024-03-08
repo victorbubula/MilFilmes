@@ -27,6 +27,6 @@ export default function Gender({ film, name }:Props) {
 				))}
 			</div>
 		</section>
-			: ''
+			:null
 	);
 }
