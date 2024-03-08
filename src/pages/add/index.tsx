@@ -1,5 +1,5 @@
 import Button from 'components/Button';
-import Logo from 'components/Logo';
+import { ReactComponent as Logo} from 'assets/logo.svg';
 import styles from './Add.module.scss';
 import Footer from 'components/Footer';
 import Input from './Input';
@@ -10,8 +10,11 @@ export default function Add() {
 	const [img, setImg] = useState('');
 	
 	return <div className={styles.background}>
-		<header className={styles.header}><Logo/></header>
-		<main>
+		<header className={styles.header}>
+			<Logo/>
+			<h1 className={styles.title}>Adicionar um filme ou série</h1>	
+		</header>
+		<main className={styles.main}>
 			<form>
 				<Input
 					label="Titulo"

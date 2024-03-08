@@ -1,7 +1,7 @@
-import Logo from 'components/Logo';
-import Button from 'components/Button';
+import { ReactComponent as Logo} from 'assets/logo.svg';
 import Navbar from './Navbar';
 import styles from './Header.module.scss';
+import {Link} from 'react-router-dom';
 
 export default function Header() {
 	return <header className={styles.header}>
@@ -9,6 +9,6 @@ export default function Header() {
 			<Logo/>
 			<Navbar/>
 		</div>
-		<Button>Adicionar</Button>
+		<Link className={styles.button} to='/add'>Adicionar</Link>
 	</header>;
 }

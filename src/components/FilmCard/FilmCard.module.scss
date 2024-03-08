@@ -3,7 +3,7 @@
 .card {
     align-items: center;
     width: fit-content;
-    margin-right: 2em;
+    margin: 1em;
     position: relative;
     .poster{
         transition: all 0.1s linear;
@@ -16,6 +16,7 @@
         left: 0;
         bottom: 0;
         color: $branco;
+        font-size: 12px;
         .name {
             font-size: 2em;
         }
@@ -23,8 +24,10 @@
 }
 
 .card:hover{
-    .poster,.info{
+    .info {
         display: block;
+    }
+    .poster{
         transition: 100ms linear;
         scale: 1.1;
     }

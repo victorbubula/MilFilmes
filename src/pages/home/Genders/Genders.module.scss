@@ -1,0 +1,16 @@
+@import "styles/variables";
+
+.films {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    .gender {
+        text-align: left;
+        color: $branco;
+        font-size: 1.5em;
+        margin: 1em;
+    }
+    .container {
+        display: flex;
+    }
+}

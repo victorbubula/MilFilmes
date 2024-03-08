@@ -1,10 +1,11 @@
 import SearchBar from './SearchBar';
 import Header from './Header';
-import styles from './Home.module.scss';
-import Button from 'components/Button';
-import filmes from 'data/filmes.json';
-import FilmCard from 'components/FilmCard';
+import {Link} from 'react-router-dom';
 import Footer from 'components/Footer';
+import Gender from './Genders';
+import filmes from 'data/filmes.json';
+import generos from 'data/generos.json';
+import styles from './Home.module.scss';
 
 export default function Home() {
 	return (
@@ -13,20 +14,14 @@ export default function Home() {
 			<section className={styles.container_sortear}>
 				<SearchBar/>
 				<h1>Não consegue decidir?</h1>
-				<Button>Sortear</Button>
+				<Link className={styles.button} to='/sortear'>Sortear</Link>
 			</section>
 			<main> 
-				<h1 className={styles.gender}>Ação</h1>
-				<section className={styles.films}>
-					{filmes.map(item => (
-						<FilmCard 
-							title={item.title}
-							photo={item.photo}
-							genders={item.gender}
-							key={item.id}
-						/>
-					))}
-				</section>
+				{generos.map(gender => <Gender
+					key={gender.name}
+					name={gender.name}
+					film={filmes.filter(film => film.gender.includes(gender.name))}
+				/>)}
 			</main>
 			<Footer/>
 		</div>

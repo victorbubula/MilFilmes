@@ -1,15 +1,24 @@
 [
     {
-        "title": "deadpool",
+        "type": "Filme",
+        "title": "Deadpool",
         "photo": "/assets/posters/deadpool.png",
         "gender": ["Comédia", "Ação"],
         "id":1
     },
 
     {
-        "title": "interestelar",
+        "type": "Filme",
+        "title": "Interestelar",
         "photo": "/assets/posters/interestelar.jpg",
-        "gender": ["sci-fi"],
+        "gender": ["Ficção cientifica"],
         "id":2
+    },
+    {
+        "type": "Série",
+        "title": "Loki",
+        "photo": "/assets/posters/loki.jpeg",
+        "gender": ["Ação", "Ficção cientifica"],
+        "id":3
     }
 ]
