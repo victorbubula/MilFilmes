@@ -4,12 +4,21 @@ import Gender from './Genders';
 import filmes from 'data/filmes.json';
 import generos from 'data/generos.json';
 import styles from './Home.module.scss';
+import { useState } from 'react';
 
 export default function Home() {
-	const films = filmes;
+	const [films, setFilms] = useState(filmes);
+	function filmSearch(value:string) {
+		value.toLowerCase();
+		setFilms(filmes.filter(film => film.title.toLowerCase().includes(value)));
+	}
+	function filterType(value:string) {
+		setFilms(filmes.filter(film => film.type.includes(value)));
+	}
+
 	return (
 		<div className={styles.background}>
-			<SearchBar/>
+			<SearchBar onChange={filmSearch}/>
 			<section className={styles.container_sortear}>
 				<h1>Não consegue decidir?</h1>
 				<Link className={styles.button} to='/sortear'>Sortear</Link>
