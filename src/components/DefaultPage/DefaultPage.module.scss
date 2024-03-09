@@ -1,4 +1,5 @@
 @import "styles/variables";
+@import 'styles/buttonStyles';
 
 .header {
     align-items: center;
@@ -6,4 +7,10 @@
     padding: 2em;
     font-family: $fonte;
     justify-content: center;
+    .button {
+        position: fixed;
+        right: 0;
+        top:0;
+        margin: 2em;
+    }
 }

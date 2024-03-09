@@ -6,11 +6,11 @@ import generos from 'data/generos.json';
 import styles from './Home.module.scss';
 
 export default function Home() {
+	const films = filmes;
 	return (
 		<div className={styles.background}>
-			<Link className={styles.button} to='/add'>Adicionar</Link>
+			<SearchBar/>
 			<section className={styles.container_sortear}>
-				<SearchBar/>
 				<h1>Não consegue decidir?</h1>
 				<Link className={styles.button} to='/sortear'>Sortear</Link>
 			</section>
@@ -18,7 +18,7 @@ export default function Home() {
 				{generos.map(gender => <Gender
 					key={gender.name}
 					name={gender.name}
-					film={filmes.filter(film => film.gender.includes(gender.name))}
+					film={films.filter(film => film.gender.includes(gender.name))}
 				/>)}
 			</main>
 		</div>

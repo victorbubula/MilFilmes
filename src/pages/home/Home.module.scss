@@ -2,12 +2,6 @@
 @import "styles/buttonStyles";
 @import "styles/defaultStyles";
 
-.button {
-    position: fixed;
-    right: 0;
-    top:0;
-    margin: 2em;
-}
 .container_sortear {
     align-items: center;
     margin: auto;
@@ -19,7 +13,6 @@
         margin: 1em 0;
     }
     .button {
-        position: relative;
         border-radius: 0px;
         font-size: 1.5em;
         padding: 18px 3em;
